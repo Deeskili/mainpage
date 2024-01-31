@@ -81,7 +81,7 @@ search_exclude: true
           console.log('Login successful');
           alert('Login succesful, redirecting you to the main page');
           // Optionally, you can redirect the user to another link
-          window.location.href = 'https://deeskili.github.io/mainpage/_posts/2024-01-22-homepage2.md';
+          window.location.href = 'https://deeskili.github.io/mainpage/AD_compsci.html';
         } else {
           console.log('Login failed');
           alert('Login failed, please check you credentials');
@@ -96,3 +96,6 @@ search_exclude: true
   </script>
 </body>
 </html>
+
+
+![roses](/images/gunsnrose.png)
