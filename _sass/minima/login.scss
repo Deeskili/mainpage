@@ -1,0 +1,83 @@
+$dark-bg: #121212;
+$form-bg: #333;
+$input-bg: #eee;
+$input-border: #ddd;
+$text-color: #fff;
+$button-bg: #4caf50;
+$button-hover-bg: #45a049;
+
+body {
+  background-color: $dark-bg;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+form {
+  background: linear-gradient(to right, $form-bg, $dark-bg);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+
+  label {
+    display: block;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: $text-color;
+  }
+
+  input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 1px solid $input-border;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: $input-bg;
+    color: $dark-bg;
+
+    &:focus {
+      outline: none;
+      border-color: $button-bg;
+    }
+  }
+
+  input[type="submit"] {
+    background-color: $button-bg;
+    color: $text-color;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: darken($button-bg, 10%);
+    }
+  }
+
+  .error-message {
+    color: #ff3d3d;
+    margin-top: 20px;
+    font-size: 14px;
+  }
+
+  .signup-link {
+    margin-top: 30px;
+
+    a {
+      color: $button-bg;
+      text-decoration: none;
+      font-weight: bold;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
